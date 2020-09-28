@@ -42,7 +42,7 @@ spec:
         operator: Exists
       containers:
       - name: controller
-        image: docker.io/weaveworks/wksctl-controller:<version>
+        image: docker.io/weaveworks/wksctl-controller:v0.9.0-alpha.4.0.20200924114541-6fdf5e9ddb9b
         command:
         - /bin/controller
         - --verbose

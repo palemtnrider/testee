@@ -46,11 +46,11 @@ track: wks-footloose
 # If left blank, defaults to: `wk-${USER}`
 # Value must be 1-100 characters matching the pattern:
 #   '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*'
-clusterName: ''
+clusterName: 'testee'
 
 # `github` or `gitlab`
 # [REQUIRED]
-gitProvider: gitlab
+gitProvider: 'github'
 
 # The Git Provider organization that will be used to create new repository and deploy key.
 #
@@ -65,7 +65,7 @@ gitProvider: gitlab
 #
 # The user doing the install should have her ssh key associated with the organization.
 # [REQUIRED] if no `gitUrl` is provided
-gitProviderOrg: ''
+gitProviderOrg: 'palemtnrider'
 
 # Providing a `gitUrl` will bypass automatic repo creation
 # (and thereby bypass the `gitProviderOrg` value above).
@@ -78,11 +78,11 @@ gitUrl: ''
 
 # Name of docker hub user for fetching images
 # [REQUIRED]
-dockerIOUser: ''
+dockerIOUser: 'markemeis'
 
 # Path to a file containing password for docker hub user account
 # [REQUIRED]
-dockerIOPasswordFile: ''
+dockerIOPasswordFile: '/Users/me/.dockerHubCred'
 
 # Path to a certificate used to encrypt sealed secrets.
 # If left blank a self signed certificate will be created.
